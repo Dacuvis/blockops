@@ -1,0 +1,25 @@
+
+# Minecraft server data
+/world/
+/logs/
+*.log
+
+# Player data
+ops.json
+whitelist.json
+banned-ips.json
+banned-players.json
+usercache.json
+
+# Server runtime
+*.jar
+*.pid
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# VS Code
+.vscode/
