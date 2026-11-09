@@ -1,4 +1,4 @@
-# CraftPilot
+# blockops
 
 A simple Minecraft Java Server Manager built with Python.
 
