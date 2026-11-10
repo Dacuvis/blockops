@@ -1,0 +1,63 @@
+---- Minecraft Crash Report ----
+// Don't be sad. I'll do better next time, I promise!
+
+Time: 11/10/26, 5:41 PM
+Description: Exception ticking world
+
+java.util.ConcurrentModificationException
+	at java.base/java.util.HashMap$HashIterator.nextNode(HashMap.java:1631)
+	at java.base/java.util.HashMap$KeyIterator.next(HashMap.java:1654)
+	at on.d(SourceFile:188)
+	at oo.d(SourceFile:206)
+	at net.minecraft.server.MinecraftServer.D(SourceFile:624)
+	at nz.D(SourceFile:349)
+	at net.minecraft.server.MinecraftServer.C(SourceFile:560)
+	at net.minecraft.server.MinecraftServer.run(SourceFile:464)
+	at java.base/java.lang.Thread.run(Thread.java:1527)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.base/java.util.HashMap$HashIterator.nextNode(HashMap.java:1631)
+	at java.base/java.util.HashMap$KeyIterator.next(HashMap.java:1654)
+	at on.d(SourceFile:188)
+	at oo.d(SourceFile:206)
+
+-- Affected level --
+Details:
+	Level name: world
+	All players: 0 total; []
+	Chunk stats: ServerChunkCache: 625 Drop: 369
+	Level seed: -8868993090641855344
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (100,64,-128), Chunk: (at 4,4,0 in 6,-8; contains blocks 96,0,-128 to 111,255,-113), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Level time: 21631 game time, 3624 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 69486 (now: false), thunder time: 95394 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.D(SourceFile:624)
+	at nz.D(SourceFile:349)
+	at net.minecraft.server.MinecraftServer.C(SourceFile:560)
+	at net.minecraft.server.MinecraftServer.run(SourceFile:464)
+	at java.base/java.lang.Thread.run(Thread.java:1527)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Linux (amd64) version 7.3.3-1-cachyos
+	Java Version: 27.0.1.0.3, Arch Linux
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Arch Linux
+	Memory: 1949749344 bytes (1859 MB) / 2147483648 bytes (2048 MB) up to 2147483648 bytes (2048 MB)
+	JVM Flags: 2 total; -Xmx2G -Xms2G
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 20; []
+	Is Modded: Unknown (can't tell)
+	Type: Dedicated Server (map_server.txt)
